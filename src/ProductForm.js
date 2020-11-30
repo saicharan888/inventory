@@ -32,7 +32,7 @@ class ProductForm extends Component {
         }
         if(price === ""){
             errors['price'] = "price is empty error"
-            this.props.setState({errors:errors})
+            this.setState({errors:errors})
             return false
         }
         return true;
